@@ -1,0 +1,74 @@
+.ontop{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    color: white;
+}
+
+.ml-component{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #363636;
+    box-shadow: 4px 4px 12px #222;
+    border: 2px solid #89ac0b;
+    border-radius: 6px;
+}
+
+
+
+.ml-head{
+    padding: 10px;
+}
+
+.ml-head select{
+    padding: 20px 20px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    color: #333;
+    border-radius: 8px;
+}
+
+.ml-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.grd{
+    padding: 20px 10px;
+    background-color: #89ac0b;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+    box-shadow: 4px 4px 12px #222;
+}
+
+.grd h3{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #444;
+    margin: 10px;
+}
+
+
+.grd:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:1000px){
+    .ontop{
+        position: static;
+    }
+
+    .ml-component{
+        width: 90%;
+    }
+
+    .ml-body{
+        justify-content: center;
+    }
+}

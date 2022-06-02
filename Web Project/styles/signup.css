@@ -1,0 +1,49 @@
+#tb{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #89ac0b;    
+}
+
+#tb td{
+    padding: 10px;
+}
+
+input{
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    background-color: #333;
+}
+
+input[type="reset"] {
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+  }
+
+
+input[type="reset"]:hover,input[type="submit"]:hover{
+    transition: 0.2s ease-in-out;
+    background-color: darkgreen;
+}
+
+.ml-component{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #363636;
+    box-shadow: 4px 4px 12px #222;
+    border: 2px solid #89ac0b;
+    border-radius: 6px;
+}
+
+.ml-body{
+    display: block;
+}

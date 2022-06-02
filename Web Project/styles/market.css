@@ -1,0 +1,142 @@
+header{
+    position: fixed;
+}
+
+.market{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content:center;
+    position: relative;
+}
+
+.sort{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    border: 1px solid gainsboro;
+}
+
+
+.s-container{
+    margin-bottom: 30px;
+    font-family: 'nunito-Sans',sans-serif;
+    margin: auto;
+    padding: 10px;
+}
+.s-container p{
+    font-weight: bold;
+    font-family: 'Montserrat',cursive;
+    font-size: 1.1em;
+}
+
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.foodCard{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+.foodCard:hover{
+    box-shadow: none;
+    transform: scale(1.3);
+}
+
+/* .foodCard:hover + #fc-popup{
+    display: block;
+    height: 50px;
+} */
+.foodCard img{
+    width: 320px;
+}
+
+#fc-popup{
+    display: none;
+}
+
+#fcName{
+    margin: 15px;
+    font-weight: bold;
+}
+
+.fcNutrition{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.fcNutrition p{
+    padding: 10px;
+    margin:10;
+    background-color: gainsboro;
+    color: black;
+    border: 1px solid gainsboro;
+}
+
+.fcNutrition p:first-child{
+    background-color: gray;
+    color: white;
+}
+
+
+@media(max-width:1000px){
+    .sort{
+        width: 100%;
+        border-right: none;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .s-container{
+        margin: auto;
+    }
+}
+
+/* 
+popout dialogue */
+#popout{
+    background-color: whitesmoke;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    margin: auto;
+}
+
+
+/* ad to cart button style */
+#btnAddToCart{
+    padding: 5px;
+    border: 1px solid gray;
+    background-color: transparent;
+    outline: none;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    color: black;
+}
+
+
+#btnAddToCart:hover{
+    background-color: #333;
+    color: white;
+}
+
+/* for the cart icon */
+.fa-shopping-cart{
+    color: #333;
+    cursor: pointer;
+}
+

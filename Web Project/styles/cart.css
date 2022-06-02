@@ -1,0 +1,27 @@
+.card-foot{
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 2px dotted gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.card-foot button{
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: green;
+    color: white;
+    margin: 10px;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.card-foot button:hover{
+    background-color: darkgreen;
+
+}
